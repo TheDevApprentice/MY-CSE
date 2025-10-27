@@ -1,0 +1,66 @@
+# Fichiers de développement
+.git
+.gitignore
+README.md
+.env
+.env.*
+!.env.docker
+
+# Dépendances et build
+node_modules
+build
+dist
+coverage
+.nyc_output
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tests
+tests
+test
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Cache et temporaires
+.cache
+.tmp
+tmp
+temp
+.next
+.nuxt
+.vuepress/dist
+
+# IDE et éditeurs
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Documentation
+docs
+*.md
+!README.md
+
+# Configuration locale
+.env.local
+.env.development
+.env.production
+.env.test

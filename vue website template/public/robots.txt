@@ -1,0 +1,60 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.menuwebservice.com/sitemap.xml
+
+# Bloquer les dossiers sensibles
+Disallow: /admin/
+Disallow: /private/
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /public/
+Disallow: /src/
+Disallow: /tests/
+Disallow: /build/
+Disallow: /backup/
+Disallow: /tmp/
+Disallow: /logs/
+
+# Bloquer les fichiers de configuration et de dépendances
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /pnpm-lock.yaml
+Disallow: /yarn.lock
+Disallow: /yarn-error.log
+Disallow: /.env
+Disallow: /.env.*
+Disallow: /docker-compose.yml
+Disallow: /README.md
+
+# Bloquer les fichiers cachés, temporaires et de backup
+Disallow: /*.log$
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*.swp$
+Disallow: /*.old$
+Disallow: /*.zip$
+Disallow: /*.tar$
+Disallow: /*.gz$
+
+# Empêcher l’indexation des images (optionnel)
+# Disallow: /*.jpg$
+# Disallow: /*.jpeg$
+# Disallow: /*.png$
+# Disallow: /*.gif$
+# Disallow: /*.svg$
+
+# Bloquer certains bots connus pour scraper ou spammer
+User-agent: MJ12bot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: dotbot
+Disallow: /
+User-agent: BLEXBot
+Disallow: /
+
+# Autoriser tout le reste

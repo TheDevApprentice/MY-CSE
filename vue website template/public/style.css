@@ -1,0 +1,350 @@
+@import "tailwindcss";
+
+/* 🎯 CORRECT : Configuration du mode sombre pour Tailwind CSS v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Alternative si @custom-variant ne fonctionne pas */
+@media (min-width: 0) {
+  .dark .dark\:bg-gray-900 { background-color: rgb(17 24 39); }
+  .dark .dark\:bg-gray-800 { background-color: rgb(31 41 55); }
+  .dark .dark\:text-white { color: rgb(255 255 255); }
+  .dark .dark\:text-gray-100 { color: rgb(243 244 246); }
+  .dark .dark\:text-gray-200 { color: rgb(229 231 235); }
+  .dark .dark\:text-gray-300 { color: rgb(209 213 219); }
+  .dark .dark\:text-gray-400 { color: rgb(156 163 175); }
+  .dark .dark\:border-gray-700 { border-color: rgb(55 65 81); }
+  .dark .dark\:border-gray-800 { border-color: rgb(31 41 55); }
+  .dark .dark\:bg-blue-900\/60 { background-color: rgb(30 58 138 / 0.6); }
+  .dark .dark\:text-blue-200 { color: rgb(191 219 254); }
+  .dark .dark\:text-blue-300 { color: rgb(147 197 253); }
+  .dark .dark\:bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
+  .dark .dark\:from-blue-400 { --tw-gradient-from: rgb(96 165 250); }
+  .dark .dark\:to-purple-400 { --tw-gradient-to: rgb(196 181 253); }
+  .dark .dark\:from-gray-800 { --tw-gradient-from: rgb(31 41 55); }
+  .dark .dark\:via-gray-900 { --tw-gradient-via: rgb(17 24 39); }
+  .dark .dark\:to-gray-800 { --tw-gradient-to: rgb(31 41 55); }
+  .dark .dark\:shadow-\[0_0_16px_4px_rgba\(59\,130\,246\,0\.25\)\] { box-shadow: 0 0 16px 4px rgba(59,130,246,0.25); }
+  .dark .dark\:bg-gray-900\/80 { background-color: rgb(17 24 39 / 0.8); }
+  .dark .dark\:hover\:text-white:hover { color: rgb(255 255 255); }
+  .dark .dark\:hover\:bg-white\/10:hover { background-color: rgb(255 255 255 / 0.1); }
+  .dark .dark\:hover\:bg-gray-800\/90:hover { background-color: rgb(31 41 55 / 0.9); }
+  .dark .dark\:hover\:border-gray-600:hover { border-color: rgb(75 85 99); }
+  .dark .dark\:bg-gradient-to-br { background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); }
+  .dark .dark\:from-gray-700 { --tw-gradient-from: rgb(55 65 81); }
+  .dark .dark\:to-gray-900 { --tw-gradient-to: rgb(17 24 39); }
+  .dark .dark\:hover\:text-gray-100:hover { color: rgb(243 244 246); }
+}
+
+/* Schéma de couleurs pour les éléments natifs du navigateur */
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Variables CSS personnalisées */
+:root {
+  --scrollbar-width: 8px;
+  --scrollbar-track: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.2);
+  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.3);
+  
+  /* Variables pour glassmorphisme */
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.22);
+  
+  /* ✨ Variables pour smooth scroll avancé */
+  --scroll-duration: 800ms;
+  --scroll-easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --scroll-offset: 80px; /* Offset pour headers fixes */
+  --momentum-duration: 1200ms;
+  --momentum-easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.dark {
+  --scrollbar-track: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.2);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.3);
+  
+  /* Variables pour glassmorphisme en mode sombre */
+  --glass-bg: rgba(10, 10, 20, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* 🚀 SMOOTH SCROLL AVANCÉ - Plus fluide et configurable */
+html {
+  /* Smooth scroll natif amélioré */
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-offset);
+  
+  /* Optimisations de rendu SANS casser position: fixed */
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  
+  /* Performance optimisée sans créer de nouveaux contextes */
+  /* contain: layout style paint; ❌ SUPPRIMÉ - casse position: fixed */
+  /* will-change: scroll-position; ❌ SUPPRIMÉ - peut affecter le stacking */
+}
+
+/* 📱 Smooth scroll optimisé pour mobile avec momentum */
+@media (hover: none) and (pointer: coarse) {
+  html {
+    /* iOS momentum scrolling */
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* overscroll-behavior-y: bounce; ❌ SUPPRIMÉ - peut affecter fixed elements */
+  }
+  
+  body {
+    /* Optimisations mobile sans affecter position: fixed */
+    /* overscroll-behavior-y: contain; ❌ SUPPRIMÉ */
+  }
+}
+
+/* 🔧 Containers scrollables avec momentum amélioré */
+.scroll-container,
+.overflow-auto,
+.overflow-y-auto,
+.overflow-x-auto {
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
+  overscroll-behavior: contain;
+  
+  /* Smooth momentum sur WebKit uniquement pour les containers */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 🎭 Smooth scroll avec easing personnalisé pour les liens d'ancrage */
+a[href^="#"]:not([href="#"]) {
+  transition: all 0.3s var(--scroll-easing);
+  scroll-margin-top: var(--scroll-offset);
+}
+
+/* Amélioration du focus pour les éléments avec ancrage - SANS transform */
+:target {
+  scroll-margin-top: var(--scroll-offset);
+  animation: highlight-target 2s ease-in-out;
+}
+
+@keyframes highlight-target {
+  0% { 
+    background-color: rgba(59, 130, 246, 0.1);
+    /* transform: scale(1.02); ❌ SUPPRIMÉ - peut affecter position: fixed */
+  }
+  50% { 
+    background-color: rgba(59, 130, 246, 0.05);
+    /* transform: scale(1.01); ❌ SUPPRIMÉ */
+  }
+  100% { 
+    background-color: transparent;
+    /* transform: scale(1); ❌ SUPPRIMÉ */
+  }
+}
+
+/* 🏃‍♂️ Scroll snap pour sections (optionnel) */
+.scroll-snap-container {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.scroll-snap-item {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* 🎢 Smooth scroll pour modals et overlays */
+.modal-content,
+.drawer-content,
+.sidebar-content {
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+  overscroll-behavior: contain;
+}
+
+/* Custom scrollbar pour WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Custom scrollbar pour Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* Base layout */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Couleurs par défaut - Tailwind se chargera du reste */
+  background-color: #ffffff;
+  color: #111827;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+  /* 🚀 Smooth scroll optimisé SANS affecter position: fixed */
+  scroll-behavior: smooth;
+  /* overscroll-behavior-y: bounce; ❌ SUPPRIMÉ - peut affecter fixed elements */
+}
+
+/* Mode sombre pour le body */
+.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Amélioration du rendu des polices variables */
+@supports (font-variation-settings: normal) {
+  body { 
+    font-family: 'Inter var', 'Inter', sans-serif; 
+  }
+}
+
+/* Structure de base */
+#app,
+.app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+/* 📱 Amélioration mobile du smooth scroll */
+@media (max-width: 768px) {
+  :root {
+    --scroll-offset: 60px; /* Offset réduit sur mobile */
+    --scroll-duration: 600ms; /* Plus rapide sur mobile */
+  }
+  
+  html {
+    /* Optimisations spécifiques mobile */
+    touch-action: pan-y;
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
+/* 🖥️ Amélioration desktop du smooth scroll */
+@media (min-width: 1024px) {
+  :root {
+    --scroll-duration: 1000ms; /* Plus fluide sur desktop */
+    --momentum-duration: 1400ms;
+  }
+  
+  /* Smooth scroll avec wheel events optimisés */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Amélioration pour les trackpads et souris de précision */
+  /* SUPPRIMÉ scroll-snap-type sur html pour éviter les conflits avec position: fixed */
+}
+
+/* Styles d'impression */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    scroll-behavior: auto !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+  
+  /* Supprimer les ombres et effets en impression */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 🎯 Accessibilité : Mouvement réduit (OBLIGATOIRE pour A11Y) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    scroll-snap-type: none !important;
+  }
+  
+  html {
+    scroll-behavior: auto !important;
+  }
+  
+  :target {
+    animation: none !important;
+  }
+}
+
+/* 🎪 Préférence pour plus d'animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Animations améliorées quand autorisées */
+  :target {
+    animation: highlight-target 2s ease-in-out;
+  }
+  
+  /* Classe utilitaire pour smooth scroll renforcé */
+  .scroll-enhanced {
+    scroll-behavior: smooth;
+    /* transition supprimée - scroll-position n'existe pas en CSS */
+  }
+}
+
+/* Styles pour l'état de focus visible améliorés */
+:focus-visible {
+  outline: 2px solid rgb(59 130 246);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+  scroll-margin-top: var(--scroll-offset);
+}
+
+/* Supprime les outlines par défaut pour les éléments cliquables */
+button:focus:not(:focus-visible),
+[role="button"]:focus:not(:focus-visible) {
+  outline: none;
+}

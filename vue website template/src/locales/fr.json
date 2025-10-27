@@ -1,0 +1,925 @@
+{
+  "common": {
+    "close": "Fermer",
+    "copy": "Copier",
+    "copied": "Copié",
+    "event": "Événement",
+    "calendarIcon": "Icône calendrier",
+    "technologiesUsed": "Technologies utilisées",
+    "technology": "Technologie",
+    "successMetrics": "Indicateurs de succès",
+    "debugTimeline": "Debug Timeline",
+    "currentPhase": "Phase actuelle",
+    "totalEvents": "Nombre total d'événements",
+    "technologies": "Technologies",
+    "activeEvents": "Événements actifs",
+    "wipBanner": {
+      "title": "Site en cours de travail",
+      "description": "Certaines animations peuvent être momentanément ralenties.<br />Ce problème sera bientôt résolu. Merci de votre compréhension !",
+      "understood": "J'ai compris"
+    }
+  },
+  "header": {
+    "name": "Mon CSE",
+    "title": "Développeur Web Frontend",
+    "auth": {
+      "signIn": "Se connecter",
+      "signUp": "S'inscrire"
+    }
+  },
+  "auth": {
+    "welcomeBack": "Bon retour !",
+    "createAccount": "Créer un compte",
+    "resetPassword": "Réinitialiser le mot de passe",
+    "signInSubtitle": "Connectez-vous à votre compte",
+    "signUpSubtitle": "Rejoignez notre communauté",
+    "forgotPasswordSubtitle": "Récupérez l'accès à votre compte",
+
+    "quickAccess": "Accès rapide",
+    "socialSubtitle": "Connectez-vous en un clic",
+    "whySocial": "Pourquoi l'authentification sociale ?",
+    "socialBenefit1": "Connexion instantanée et sécurisée",
+    "socialBenefit2": "Aucun mot de passe à retenir",
+    "socialBenefit3": "Synchronisation automatique des données",
+
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+
+    "emailPlaceholder": "votre email ",
+    "passwordPlaceholder": "••••••••",
+    "confirmPasswordPlaceholder": "••••••••",
+    "firstNamePlaceholder": "Prénom",
+    "lastNamePlaceholder": "Nom",
+
+    "signIn": "Se connecter",
+    "signUp": "Créer un compte",
+    "sendResetLink": "Envoyer le lien",
+    "continueWithGoogle": "Continuer avec Google",
+    "continueWithGithub": "Continuer avec GitHub",
+    "continueWithMicrosoft": "Continuer avec Microsoft",
+    "googleSubtext": "Accès instantané avec votre compte Google",
+    "githubSubtext": "Pour les développeurs et créateurs",
+    "microsoftSubtext": "Pour les développeurs et créateurs",
+
+    "backToSignIn": "Retour à la connexion",
+    "forgotPassword": "Mot de passe oublié ?",
+    "backToHome": "Retour à l'accueil",
+    "or": "ou",
+
+    "forgotPasswordInfo": "Nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+    "passwordMismatch": "Les mots de passe ne correspondent pas",
+    "resetLinkSent": "Un lien de réinitialisation a été envoyé à votre email",
+    "quickLogin": "Connexion rapide",
+    "quickLoginSubtitle": "Connectez-vous en un clic avec vos réseaux sociaux"
+  },
+  "navigation": {
+    "main": "Navigation principale",
+    "playground": "Playground",
+    "cv": "Cv",
+    "home": "Home",
+    "doc": "Documentation",
+    "altitude": "Altitude",
+    "contact": "Contact",
+    "projects": "Projets",
+    "blog": "Blog",
+    "admin": "Administration",
+    "cse": "CSE",
+    "toggleMenu": "Basculer le menu"
+  },
+  "experience": {
+    "title": "Expérience professionnelle",
+    "list": [
+      {
+        "role": "Développeur Frontend",
+        "company": "Entreprise X",
+        "years": "2022-2024",
+        "desc": "Développement d'applications web modernes avec Vue.js et Tailwind CSS."
+      }
+    ]
+  },
+  "education": {
+    "title": "Formation",
+    "list": [
+      {
+        "degree": "Master Informatique",
+        "school": "Université Y",
+        "years": "2019-2021"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Actualités du Comité d'Entreprise",
+    "viewMore": "Voir plus",
+    "seeMore": "Voir plus",
+    "urgent": "URGENT",
+    "readMore": "Lire la suite",
+    "recentNews": "Actualités récentes",
+    "ceServices": "Services Mon CSE",
+    "viewAllNews": "Toutes les actualités",
+    "viewServices": "Tous les services",
+    "lastUpdate": "Dernière mise à jour",
+    "noNews": "Aucune actualité récente",
+    "subtitle": "Création d'expériences web modernes et performantes",
+    "discover": "Découvrir",
+    "projects": "Mes projets",
+    "scroll": "Scroll"
+  },
+  "skills": {
+    "title": "Compétences techniques",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "mobile": "Mobile",
+    "tools_cloud": "Outils & Cloud"
+  },
+  "vision": {
+    "quote": "Créer, innover, transmettre : chaque ligne de code est une aventure."
+  },
+  "cta": {
+    "button": "Découvrir mon univers",
+    "text": "Explorez mon portfolio et mes réalisations"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "p1": "Passionné par le développement web et la création d'expériences numériques immersives, j'aime transformer des idées en applications concrètes. Mon parcours m'a permis de toucher à de nombreuses technologies, du front-end réactif à l'architecture back-end robuste.",
+    "p2": "J'accorde une importance particulière au design, à la performance et à l'accessibilité. J'aime apprendre, transmettre et travailler en équipe pour relever des défis toujours plus ambitieux.",
+    "p3": "En dehors du code, je m'intéresse à l'art, la photographie, et j'adore explorer de nouveaux horizons, que ce soit en voyage ou à travers la veille technologique."
+  },
+  "projects": {
+    "title": "Projets récents",
+    "visit": "Visiter",
+    "discover": "Découvrir",
+    "history": "Historique",
+    "tryme": "Essayez moi",
+    "status": {
+      "construction": "En construction",
+      "development": "En développement", 
+      "stopped": "Arrêté"
+    },
+    "p1": {
+      "title": "CubeLED-icious",
+      "desc": "Le Pixel Parfait en 3D",
+      "badge": "React / Three.js"
+    },
+    "p2": {
+      "title": "Meet Sporty",
+      "desc": "Site de rencontres amicales autour du sport",
+      "badge": "Vue / Node.js"
+    },
+    "p3": {
+      "title": "Application Mobile",
+      "desc": "App mobile cross-plateforme avec notifications et synchronisation temps réel.",
+      "badge": "React-Native"
+    },
+    "p4": {
+      "title": "App React native",
+      "desc": "App mobile cross-plateformes, prête à être connectée à votre backend favori.",
+      "badge": "React-Native / Expo"
+    },
+    "p5": {
+      "title": "Migration ERP",
+      "desc": "Migration d'un ERP existant vers un nouveau système.",
+      "badge": "Node.js / MongoDB"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "message": "Un projet, une idée, une collaboration ? Discutons-en ! Je réponds rapidement à tous les messages.",
+    "button": "Me contacter",
+    "followme": "Ou suivez-moi sur"
+  },
+  "playground": {
+    "title": "Laboratoire de Montagnes Procédurales",
+    "subtitle": "Modifiez les paramètres pour créer des paysages montagneux uniques. Les changements s'appliqueront en temps réel au fond d'écran du site.",
+    "cards": {
+      "mountains": {
+        "title": "Générateur de Montagnes",
+        "description": "Créez des chaînes de montagnes procédurales avec des paramètres personnalisables"
+      },
+
+      "gsap": {
+        "title": "Laboratoire d'Animation",
+        "description": "Expérimentez avec les animations GSAP et créez des effets dynamiques"
+      },
+      "cards": {
+        "title": "Design de Cartes",
+        "description": "Cartes interactives avec effets CSS modernes"
+      },
+      "particles": {
+        "title": "Système de Particules",
+        "description": "Créez des systèmes de particules interactifs avec comportement personnalisable"
+      },
+      "gradients": {
+        "title": "Générateur de Dégradés",
+        "description": "Concevez de beaux dégradés pour vos projets web"
+      }
+    },
+    "codeEditor": {
+      "title": "Code source",
+      "viewBtn": "Voir le code",
+      "hideBtn": "Masquer le code",
+      "copyBtn": "Copier le code",
+      "copiedBtn": "Copié !",
+      "usageInstructions": "Ce code est une version fonctionnelle de l'algorithme avec vos paramètres actuels. Vous pouvez le copier et l'utiliser dans vos propres projets.",
+      "algorithmTab": "Algorithme",
+      "componentTab": "Composant Vue"
+    }
+  },
+  "cardEditor": {
+    "title": "Éditeur de Design de Carte",
+    "subtitle": "Ajustez les paramètres pour créer des designs uniques de cartes. Les modifications s'appliqueront en temps réel au fond de la page.",
+    "dimensions": "Dimensions",
+    "totalHeight": "Hauteur Totale",
+    "previewHeight": "Hauteur de Prévisualisation",
+    "infoPaddingTop": "Espace Supérieur d'Info",
+    "infoHeightNote": "Hauteur de l'info = Hauteur totale - Hauteur de Prévisualisation",
+    "borders": "Bordures",
+    "borderRadius": "Rayon de Bordure",
+    "borderWidth": "Épaisseur de Bordure",
+    "designControls": "Controles de Design",
+    "colorsEffects": "Couleurs & Effets",
+    "primaryColor": "Couleur Primaire",
+    "secondaryColor": "Couleur Secondaire",
+    "backgroundOpacity": "Opacité du Fond",
+    "blurIntensity": "Intensité du Flou",
+    "gradientAngle": "Angle du Dégradé",
+    "animations": "Animations",
+    "hoverEffect": "Effet au Survol",
+    "hoverEffectNone": "Aucun",
+    "hoverEffectScale": "Échelle",
+    "hoverEffectGlow": "Éclat",
+    "hoverEffectLift": "Soulèvement",
+    "scale": "Échelle",
+    "glow": "Éclat",
+    "lift": "Soulèvement",
+    "hoverIntensity": "Intensité de l'Effet",
+    "hoverActive": "Survol actif",
+    "actions": "Actions",
+    "resetDefaults": "Réinitialiser",
+    "viewCode": "Voir le Code",
+    "saveConfig": "Sauvegarder la Configuration",
+    "configSaved": "Configuration sauvegardée avec succès",
+    "configSaveError": "Erreur lors de la sauvegarde",
+    "preview": "Aperçu",
+    "previewArea": "Zone de Prévisualisation",
+    "sampleTitle": "Titre de la Carte",
+    "sampleDescription": "Ceci est une description d'échantillon qui montre l'apparence du texte.",
+    "previewTitle": "Aperçu",
+    "previewDescription": "Ajustez les paramètres à gauche et voyez les changements en temps réel",
+    "codeEditor": {
+      "title": "Code du Composant Carte",
+      "componentTab": "Composant Vue",
+      "cssTab": "Styles CSS"
+    }
+  },
+  "mountainEditor": {
+    "layersTitle": "Couches de montagnes",
+    "layer": "Couche",
+    "height": "Hauteur",
+    "opacity": "Opacité",
+    "complexity": "Complexité",
+    "scale": "Échelle",
+    "seed": "Seed",
+    "randomSeed": "Générer aléatoirement",
+    "globalParamsTitle": "Paramètres globaux",
+    "persistence": "Persistence",
+    "persistenceHelp": "Influence des détails sur le rendu final",
+    "lacunarity": "Lacunarité",
+    "lacunarityHelp": "Fréquence des détails",
+    "algoParamsTitle": "Paramètres d'algorithme",
+    "gradientBase": "Intensité du gradient",
+    "gradientBaseHelp": "Version 1: 1, Version 2+: 20. Influence l'amplitude des variations.",
+    "initialFrequency": "Fréquence initiale",
+    "initialFrequencyHelp": "Version 1-2: 1.0, Version 3+: 1.2. Fréquence de base des ondulations.",
+    "svgWidth": "Largeur du SVG",
+    "svgWidthHelp": "Version 1-3: 1440, Version 4+: 2440. Influence la résolution horizontale des montagnes.",
+    "reset": "Réinitialiser",
+    "randomAll": "Génération Aléatoire",
+    "info": {
+      "title": "À propos de la génération procédurale",
+      "description": "Ce générateur utilise l'algorithme de {0} et la technique de {1} pour créer des chaînes de montagnes réalistes.",
+      "description_html": [
+        "bruit de Perlin",
+        "Mouvement Brownien Fractionnaire (FBM)"
+      ],
+      "mainParams": "Principaux paramètres:",
+      "complexity": "{0} (octaves): Détermine le niveau de détail des montagnes.",
+      "complexity_html": ["Complexité"],
+      "scale": "{0}: Contrôle la largeur des formations montagneuses.",
+      "scale_html": ["Échelle"],
+      "persistence": "{0}: Influence l'impact des détails sur la forme générale.",
+      "persistence_html": ["Persistence"],
+      "lacunarity": "{0}: Affecte la fréquence des détails entre chaque niveau.",
+      "lacunarity_html": ["Lacunarité"],
+      "seed": "{0}: Valeur qui détermine la génération spécifique (même seed = mêmes montagnes).",
+      "seed_html": ["Seed"]
+    }
+  },
+  "footer": {
+    "name": "Mon CSE",
+    "role": "Développeur Full Stack Passionné",
+    "copyright": "Mon CSE. Tous droits réservés.",
+    "companyname": "Mon CSE",
+    "companyDescription": "Smart energy. Powering progress",
+    "services": {
+      "title": "Services",
+      "webDev": "Développement Web",
+      "mobileDev": "Développement Mobile",
+      "consulting": "Conseil",
+      "maintenance": "Maintenance",
+      "design": "Design"
+    },
+    "company": {
+      "title": "Entreprise",
+      "name": "Mon CSE",
+      "about": "À propos",
+      "team": "Équipe",
+      "careers": "Carrières",
+      "blog": "Blog",
+      "partners": "Partenaires"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "contact@worldgridCSE.com",
+      "phone": "+33 1 23 45 67 89",
+      "address": "123 Rue de l'Innovation\n75001 Paris, France"
+    },
+    "social": {
+      "title": "Suivez-nous"
+    },
+    "legal": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "cookies": "Politique des cookies",
+      "sitemap": "Plan du site"
+    }
+  },
+  "language": {
+    "switch": "Changer de langue"
+  },
+  "cv": {
+    "title": "Cv"
+  },
+  "altitudeHero": {
+    "title": "Les coulisses",
+    "subtitle": "Découvrez l'inspiration et les choix créatifs derrière ce voyage numérique",
+    "buttons": {
+      "inspiration": "Inspiration",
+      "design": "Design"
+    },
+    "scroll": "Scroll"
+  },
+  "colorPalette": {
+    "sectionTitle": "Harmonie chromatique alpine",
+    "mainColors": {
+      "azureBlue": "Bleu Azure",
+      "indigoMountain": "Indigo Montagne",
+      "violetPeaks": "Violet Sommets",
+      "roseAlpenglow": "Rose Alpenglow"
+    },
+    "mainHex": {
+      "azureBlue": "#3b82f6",
+      "indigoMountain": "#6366f1",
+      "violetPeaks": "#8b5cf6",
+      "roseAlpenglow": "#ec4899"
+    },
+    "psychology": {
+      "blue": {
+        "title": "Bleu - Confiance",
+        "desc": "Évoque la fiabilité, la sérénité et la profondeur technique. Comme le ciel dégagé de montagne."
+      },
+      "indigo": {
+        "title": "Indigo - Innovation",
+        "desc": "Représente la créativité et la vision d'avenir. L'exploration de nouveaux horizons technologiques."
+      },
+      "violet": {
+        "title": "Violet - Inspiration",
+        "desc": "Symbolise l'imagination et l'élévation spirituelle. L'ascension vers l'excellence."
+      },
+      "rose": {
+        "title": "Rose - Passion",
+        "desc": "Exprime l'énergie et l'enthousiasme pour les projets. La passion du développement."
+      }
+    }
+  },
+  "designChoices": {
+    "sectionTitle": "Choix créatifs & esthétiques",
+    "palette": {
+      "title": "Palette chromatique",
+      "desc": "Les bleus et violets évoquent le ciel alpin et les couchers de soleil en montagne. Cette palette transmet la sérénité et l'innovation, parfaite pour un portfolio tech."
+    },
+    "glassmorphism": {
+      "title": "Glassmorphism",
+      "desc": "L'effet de verre dépoli rappelle la brume matinale sur les sommets et apporte une modernité élégante à l'interface.",
+      "demo": "Effet de verre"
+    },
+    "typography": {
+      "title": "Typographie",
+      "desc": "Police moderne et lisible, avec des contrastes marqués pour une hiérarchie visuelle claire, inspirée de la netteté des paysages alpins.",
+      "main": "Titre Principal",
+      "subtitle": "Sous-titre",
+      "text": "Texte courant"
+    },
+    "animations": {
+      "title": "Micro-animations",
+      "desc": "Chaque animation raconte une histoire : l'oiseau qui s'envole, les montagnes qui bougent doucement, créant une expérience vivante."
+    }
+  },
+  "inspiration": {
+    "alps": {
+      "title": "Les Alpes Grenobloises",
+      "desc": "Grandir entouré des montagnes de Grenoble a profondément marqué ma vision créative. Ces sommets majestueux représentent l'élévation, l'aspiration et la constante recherche de nouveaux horizons - exactement ce que je ressens dans le développement.",
+      "tags": ["Belledonne", "Vercors", "Chartreuse"]
+    },
+    "bird": {
+      "title": "L'oiseau en liberté",
+      "desc": "L'oiseau qui vole sur le site symbolise la liberté créative et l'envol vers de nouveaux projets. Il représente cette sensation de légèreté et de possibilités infinies qu'offre le développement web moderne.",
+      "tags": ["Liberté", "Créativité", "Élévation"]
+    },
+    "parallax": {
+      "title": "Parallax montagnard",
+      "desc": "L'effet parallax des montagnes recrée cette sensation de profondeur qu'on ressent en contemplant les différents plans montagneux. Chaque couche raconte une partie de l'histoire.",
+      "tags": ["Profondeur", "Immersion", "Mouvement"]
+    }
+  },
+  "technical": {
+    "sectionTitle": "Le défi technique",
+    "vue": {
+      "title": "Vue.js + TypeScript",
+      "desc": "Choix de Vue 3 avec Composition API pour sa réactivité naturelle et TypeScript pour la robustesse du code.",
+      "badges": ["Vue 3", "TypeScript"]
+    },
+    "gsap": {
+      "title": "Animations GSAP",
+      "desc": "ScrollTrigger et timeline GSAP pour des animations fluides et performantes, synchronisées avec le scroll.",
+      "badges": ["GSAP", "ScrollTrigger"]
+    },
+
+    "responsive": {
+      "title": "Mobile-First",
+      "desc": "Développement responsive avec Tailwind CSS, optimisé pour tous les écrans et devices.",
+      "badges": ["Tailwind", "Responsive"]
+    },
+    "performance": {
+      "title": "Optimisations",
+      "desc": "Lazy loading, tree shaking, composables réutilisables pour des performances optimales.",
+      "badges": ["Performance", "Optimisé"]
+    },
+    "accessibility": {
+      "title": "Accessibilité",
+      "desc": "Respect des standards WCAG, navigation clavier, contrastes optimisés pour tous les utilisateurs.",
+      "badges": ["WCAG", "Keyboard"]
+    }
+  },
+  "erp": {
+    "navigation": {
+      "skipToContent": "Aller au contenu principal",
+      "phaseNavigation": "Navigation des phases du projet ERP",
+      "phaseSelector": "Sélecteur de phase de migration",
+      "architectureDiagram": "Diagramme d'architecture ERP",
+      "interactiveChart": "Graphique interactif de l'architecture"
+    },
+    "hero": {
+      "badge": "Architecture de Transformation",
+      "title": "Desktop vers Cloud",
+      "subtitle": "Transformez une application desktop monolithique en une architecture cloud moderne, scalable et performante",
+      "stats": {
+        "performance": "Performance +%",
+        "uptime": "Uptime %",
+        "costReduction": "Réduction coûts %",
+        "scalability": "Scalabilité %"
+      }
+    },
+    "diagram": {
+      "title": "Architecture Interactive",
+      "subtitle": "Explorez les différentes phases de la transformation ERP",
+      "controls": {
+        "resetZoom": "Reset Zoom",
+        "zoomIn": "Zoom +",
+        "zoomOut": "Zoom -",
+        "resetCurrentPhase": "Reset positions de cette phase",
+        "resetAllPhases": "Reset toutes les positions"
+      },
+      "instructions": {
+        "dragNodes": "Glissez les nœuds - positions sauvées",
+        "wheelZoom": "Molette pour zoomer",
+        "resetButtons": "Boutons orange/rouge pour reset"
+      },
+      "legend": {
+        "title": "Légende des types de nœuds",
+        "legacy": "Architecture Legacy",
+        "process": "Processus de Migration",
+        "modern": "Architecture Moderne"
+      },
+      "debug": {
+        "title": "Debug ERP Diagram",
+        "phase": "Phase",
+        "dataLoaded": "Data loaded",
+        "phases": "Phases",
+        "diagramRendered": "Diagram rendered",
+        "zoom": "Zoom",
+        "isLoading": "Is Loading",
+        "dragActive": "Drag Active",
+        "customPositions": "Custom positions",
+        "renderCount": "Render count",
+        "lastUpdate": "Last update"
+      }
+    },
+    "phases": {
+      "before": {
+        "title": "État Initial",
+        "description": "Architecture legacy monolithique"
+      },
+      "migration": {
+        "title": "Process de Migration",
+        "description": "Transformation progressive"
+      },
+      "after": {
+        "title": "Architecture Cible",
+        "description": "Solution cloud moderne"
+      },
+      "currentPhase": "Phase actuelle :"
+    },
+    "nodeDetails": {
+      "closeWindow": "Fermer la fenêtre de détails",
+      "types": {
+        "legacy": "Legacy",
+        "process": "Migration",
+        "modern": "Cloud"
+      },
+      "actions": {
+        "learnMore": "En savoir plus",
+        "architecture": "Architecture"
+      },
+      "performance": {
+        "uptime": "Uptime",
+        "latency": "Latence",
+        "scaling": "Scaling"
+      }
+    },
+    "timeline": {
+      "title": "Timeline du Projet",
+      "subtitle": "Une transformation progressive sur {0} mois, de l'analyse initiale au déploiement final",
+      "results": {
+        "performance": {
+          "title": "Performance",
+          "description": "85% d'amélioration du temps de réponse"
+        },
+        "savings": {
+          "title": "Économies",
+          "description": "60% de réduction des coûts opérationnels"
+        },
+        "scalability": {
+          "title": "Scalabilité",
+          "description": "Capacité x10 sans changement d'architecture"
+        }
+      }
+    },
+    "loading": {
+      "hero": "Chargement de la section hero...",
+      "diagram": "Chargement du diagramme...",
+      "timeline": "Chargement de la timeline..."
+    },
+    "timelineData": {
+      "dates": [
+        "Janvier 2024",
+        "Février 2024",
+        "Mars 2024",
+        "Avril 2024",
+        "Mai 2024",
+        "Juin 2024"
+      ],
+      "events": [
+        {
+          "title": "Analyse de l'existant",
+          "description": "Audit complet de l'architecture legacy et identification des points de friction",
+          "metrics": [
+            { "label": "Composants analysés" },
+            { "label": "Points critiques" }
+          ]
+        },
+        {
+          "title": "Design de la solution",
+          "description": "Conception de l'architecture cible et définition de la stratégie de migration",
+          "metrics": [
+            { "label": "Microservices" },
+            { "label": "Endpoints API" }
+          ]
+        },
+        {
+          "title": "Migration des données",
+          "description": "Transformation et migration progressive des données vers le cloud",
+          "metrics": [{ "label": "Enregistrements" }, { "label": "Intégrité" }]
+        },
+        {
+          "title": "Développement API",
+          "description": "Création des services REST et mise en place de l'architecture microservices",
+          "metrics": [{ "label": "Latence" }, { "label": "Coverage" }]
+        },
+        {
+          "title": "Frontend moderne",
+          "description": "Développement de l'interface web responsive et progressive",
+          "metrics": [{ "label": "Lighthouse" }, { "label": "Accessibilité" }]
+        },
+        {
+          "title": "Déploiement & Go-Live",
+          "description": "Mise en production progressive et monitoring en temps réel",
+          "metrics": [{ "label": "Downtime" }, { "label": "Succès" }]
+        }
+      ],
+      "phases": {
+        "before": {
+          "title": "État Initial",
+          "description": "Analyse et planification",
+          "duration": "2 mois"
+        },
+        "migration": {
+          "title": "Migration",
+          "description": "Transformation progressive",
+          "duration": "3 mois"
+        },
+        "after": {
+          "title": "Architecture Cible",
+          "description": "Déploiement et monitoring",
+          "duration": "1 mois"
+        }
+      },
+      "validation": {
+        "duplicateIds": "IDs dupliqués trouvés dans les données de timeline",
+        "missingId": "Événement {0}: id manquant",
+        "missingPhase": "Événement {0}: phase manquante",
+        "missingDate": "Événement {0}: date manquante",
+        "missingTitle": "Événement {0}: titre manquant",
+        "missingDescription": "Événement {0}: description manquante",
+        "invalidPhase": "Événement {0}: phase invalide \"{1}\"",
+        "loaded": "Données de timeline chargées",
+        "validationPassed": "Validation réussie ✅",
+        "validationErrors": "Erreurs de validation",
+        "stats": "Statistiques"
+      }
+    },
+    "architectureNodes": {
+      "before": {
+        "desktopMonolith": {
+          "label": "Application Desktop",
+          "description": "Application Delphi monolithique de 15+ ans",
+          "details": [
+            "Code de 100k+ lignes",
+            "Mise à jour manuelle chez le client",
+            "Aucun versionning",
+            "Point de défaillance unique"
+          ]
+        },
+        "legacyApi": {
+          "label": "API",
+          "description": ".Net framework 3.5 API obsolète et non maintenue",
+          "details": [
+            "Version non supportée depuis 2009",
+            "Aucun versionning",
+            "Sécurité faible",
+            "Couplage fort avec la DB",
+            "Effacement de ligne afin de mettre à jour une données"
+          ]
+        },
+        "chaoticDatabase": {
+          "label": "Base de données",
+          "description": "DB modifiée sans contrôle ni versioning",
+          "details": [
+            "Schema modifié du jour au lendemain sans concertation",
+            "Pas de migrations versionnées",
+            "Pas de contraintes d'intégrité"
+          ]
+        },
+        "backupDisaster": {
+          "label": "Backup",
+          "description": "Système de sauvegarde préhistorique",
+          "details": [
+            "Sauvegarde manuelle uniquement",
+            "Écrasement des anciennes sauvegardes",
+            "Aucune vérification d'intégrité",
+            "Un seul point de défaillance"
+          ]
+        }
+      },
+      "migration": {
+        "analysis": {
+          "label": "Analyse du Legacy",
+          "description": "Extraction des règles métier",
+          "details": [
+            "Revue de la documentation du code existant",
+            "Identification des goulots d'étranglement",
+            "Identification des dépendances",
+            "Mapping des fonctionnalités pour microservices",
+            "Estimation des charges et patterns d'usage",
+            "Estimation des efforts",
+            "Définition des SLA et objectifs de performance"
+          ]
+        },
+        "apiDesign": {
+          "label": "Design API REST",
+          "description": "Architecture des endpoints",
+          "details": [
+            "Définition des ressources",
+            "Standards RESTful",
+            "Sécurisation JWT + OAuth2 distribuée",
+            "Containerisation",
+            "Architecture hexagonale",
+            "Domain Driven Design (DDD)",
+            "Découpage en microservices indépendants",
+            "Documentation OpenAPI/Swagger"
+          ]
+        },
+        "dataMigration": {
+          "label": "Migration de données",
+          "description": "ETL vers le cloud",
+          "details": [
+            "Scripts de transformation",
+            "Validation des données",
+            "Migration incrémentale",
+            "Tests d'intégrité"
+          ]
+        },
+        "testingApi": {
+          "label": "Tests & Validation API",
+          "description": "Assurance qualité",
+          "details": [
+            "Tests unitaires",
+            "Tests d'intégration",
+            "Tests de non-régression",
+            "Tests de performance"
+          ]
+        },
+        "businessMonitoring": {
+          "label": "Monitoring métier",
+          "description": "Métriques et dashboard business",
+          "details": [
+            "Dashboard managers et KPI métier",
+            "Métriques de performance business",
+            "Alertes sur les processus critiques",
+            "Reporting automatisé pour la direction",
+            "Monitoring ROI et gains de productivité"
+          ]
+        },
+        "securityCompliance": {
+          "label": "Sécurité & Conformité",
+          "description": "Sécurisation du système développé",
+          "details": [
+            "Audit de sécurité du système développé",
+            "Conformité RGPD et réglementations métier",
+            "Sécurisation des APIs et données migrées",
+            "Politique de sauvegarde et récupération",
+            "Chiffrement des données sensibles",
+            "Logs d'audit et traçabilité"
+          ]
+        },
+        "frontendDev": {
+          "label": "Dev Frontend",
+          "description": "Interface web moderne",
+          "details": [
+            "Vue.js 3 + TypeScript avec lazy loading",
+            "PWA avec service workers et cache",
+            "Containerisation Docker multi-stage",
+            "CDN global pour assets statiques",
+            "Bundle splitting et code optimization",
+            "Responsive design",
+            "Optimisation UX"
+          ]
+        },
+        "testing": {
+          "label": "Tests & Validation",
+          "description": "Validation technique et QA complète",
+          "details": [
+            "Tests unitaires",
+            "Tests d'intégration",
+            "Tests d'end-to-end (E2E)",
+            "Tests de sécurité",
+            "Monitoring des performances Azure SQL",
+            "Tests de montée en charge complète",
+            "Benchmarks vs système legacy"
+          ]
+        },
+        "changeManagement": {
+          "label": "Gestion du changement",
+          "description": "Formation sur le système fonctionnel",
+          "details": [
+            "Formation des utilisateurs finaux sur le nouveau système",
+            "Documentation et guides utilisateur",
+            "Plan de communication interne",
+            "Préparation au changement organisationnel",
+            "Définition des nouveaux processus métier"
+          ]
+        },
+        "uatBusiness": {
+          "label": "UAT & Validation métier",
+          "description": "Tests d'acceptation utilisateur",
+          "details": [
+            "Scénarios de tests métier avec utilisateurs formés",
+            "Validation des workflows critiques",
+            "Tests de régression fonctionnelle",
+            "Validation des performances par les utilisateurs",
+            "Recette utilisateur et sign-off métier"
+          ]
+        },
+        "deploying": {
+          "label": "Transition & Déploiement",
+          "description": "Bascule progressive et déploiement",
+          "details": [
+            "Cluster Kubernetes (AKS/EKS)",
+            "Déploiement Vert/Bleu avec rollback",
+            "Période de fonctionnement en parallèle",
+            "Bascule progressive par services/utilisateurs",
+            "Plan de rollback complet (technique + métier)",
+            "Migration des données historiques",
+            "Support post-migration 24/7"
+          ]
+        }
+      },
+      "after": {
+        "webApp": {
+          "label": "Application Web",
+          "description": "SPA moderne et responsive",
+          "details": [
+            "Accessible partout",
+            "Interface utilisateur moderne",
+            "Mises à jour instantanées",
+            "PWA capabilities"
+          ]
+        },
+        "apiGateway": {
+          "label": "API Gateway",
+          "description": "Point d'entrée sécurisé et intelligent",
+          "details": [
+            "Authentification JWT",
+            "Rate limiting",
+            "Routage intelligent",
+            "Monitoring centralisé",
+            "Transformation des requêtes"
+          ]
+        },
+        "nginxLoadBalancer": {
+          "label": "Nginx Load Balancer",
+          "description": "Répartiteur de charge haute performance",
+          "details": [
+            "Load balancing intelligent",
+            "Health checks automatiques",
+            "Configuration Blue/Green",
+            "Performances optimisées"
+          ]
+        },
+        "apiServices": {
+          "label": "Services API",
+          "description": ".NET Core microservices",
+          "details": [
+            "Architecture modulaire",
+            "Scalabilité horizontale",
+            "Conteneurisation Docker",
+            "CI/CD automatisé"
+          ]
+        },
+        "cloudDb": {
+          "label": "Base de données Cloud",
+          "description": "Azure SQL / PostgreSQL",
+          "details": [
+            "Haute disponibilité",
+            "Backup automatique",
+            "Réplication multi-région",
+            "Scaling automatique"
+          ]
+        },
+        "blobStorage": {
+          "label": "Stockage Cloud",
+          "description": "Azure Blob Storage",
+          "details": [
+            "Stockage illimité",
+            "CDN intégré",
+            "Versioning automatique",
+            "Sécurité renforcée"
+          ]
+        },
+        "ciCd": {
+          "label": "CI/CD Pipeline",
+          "description": "GitLab CI/CD avec orchestration Blue/Green",
+          "details": [
+            "Déploiement automatisé",
+            "Tests continus",
+            "Rollback rapide",
+            "Monitoring pipeline",
+            "Orchestration API Gateway + Nginx"
+          ]
+        },
+        "monitoring": {
+          "label": "Monitoring",
+          "description": "Application Insights",
+          "details": [
+            "Logs centralisés",
+            "Métriques en temps réel",
+            "Alertes automatiques",
+            "Dashboard personnalisé"
+          ]
+        }
+      }
+    }
+  }
+}

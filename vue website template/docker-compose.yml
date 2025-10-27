@@ -1,0 +1,30 @@
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: cse-frontend
+    restart: unless-stopped
+    ports:
+      - "8031:80"
+    environment:
+      - NODE_ENV=production
+      - VITE_API_BASE_URL=http://localhost:3000/api
+      - VITE_API_TIMEOUT=30000
+      - VITE_WEBSOCKET_URL=ws://localhost:8001
+      - VITE_WEBSOCKET_RECONNECT_INTERVAL=5000
+      - VITE_ENABLE_REAL_TIME=true
+      - VITE_AUTH_TOKEN_KEY=auth_token
+      - VITE_REFRESH_TOKEN_KEY=refresh_token
+      - VITE_CONTENT_SECURITY_POLICY=false
+      - VITE_ENABLE_XSS_PROTECTION=true
+      - VITE_SECURE_COOKIES=false
+      - VITE_VUE_APP_GOOGLE_CLIENT_ID=your-google-client-id
+      - VITE_VUE_APP_MICROSOFT_CLIENT_ID=your-microsoft-client-id
+      - VITE_VUE_APP_REDIRECT_URI=http://localhost:3000/auth/callback
+    networks:
+      - cse-network
+
+networks:
+  cse-network:
+    driver: bridge

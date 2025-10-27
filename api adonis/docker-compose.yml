@@ -1,0 +1,121 @@
+version: '3.8'
+services:
+  #--------------------------------------------------
+  # Service Redis
+  #--------------------------------------------------
+  redis:
+    build:
+      context: .
+      dockerfile: Dockerfile.redis
+    container_name: cse-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data/redis
+      - ./docker/redis/redis.conf:/usr/local/etc/redis/redis.conf:ro
+    networks:
+      - cse-network
+    environment:
+      - REDIS_PORT=6379
+      - REDIS_HOST=0.0.0.0
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    command: redis-server /usr/local/etc/redis/redis.conf
+
+  #--------------------------------------------------
+  # Service API Adonis.js
+  #--------------------------------------------------
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.adonis
+      target: production
+    container_name: cse-api
+    restart: unless-stopped
+    ports:
+      - "3333:3333"
+    volumes:
+      - api-logs:/app/logs
+    networks:
+      - cse-network
+    environment:
+      # Configuration Adonis
+      - NODE_ENV=production
+      - PORT=3333
+      - HOST=0.0.0.0
+      - APP_KEY=${APP_KEY}
+      - APP_URL=http://localhost:3333
+      - LOG_LEVEL=info
+      
+      # Base de données
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_DATABASE=${DB_DATABASE}
+      
+      # Redis (connecte au service redis)
+      - REDIS_CONNECTION=main
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=
+      - REDIS_DB=0
+      
+      # Mail
+      - MAIL_FROM_NAME=${MAIL_FROM_NAME}
+      - MAIL_FROM=${MAIL_FROM}
+      - MAIL_DRIVER=smtp
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USERNAME=${SMTP_USERNAME}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      
+      # Sécurité
+      - HASH_DRIVER=argon2
+    depends_on:
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "ace", "list"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  #--------------------------------------------------
+  # Service Redis Commander (Interface Web Redis) - Optionnel
+  #--------------------------------------------------
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: cse-redis-commander
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    networks:
+      - cse-network
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+      - HTTP_USER=admin
+      - HTTP_PASSWORD=secret
+    depends_on:
+      - redis
+    profiles:
+      - tools  # Utilise docker-compose --profile tools up pour inclure ce service
+
+# Réseaux personnalisés
+networks:
+  cse-network:
+    driver: bridge
+    name: cse-api-network
+
+# Volumes persistants
+volumes:
+  redis-data:
+    name: cse-redis-data
+  api-logs:
+    name: cse-api-logs

@@ -1,0 +1,21 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "module": "NodeNext",
+    "isolatedModules": true,
+    "declaration": false,
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "#models/*": ["app/models/*"],
+      "#helper/*": ["app/helper/*"],
+      "#controllers/*": ["app/controllers/*"],
+      "#seeders/*": ["database/seeders/*"]
+    }
+  }
+}

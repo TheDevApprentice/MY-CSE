@@ -1,0 +1,36 @@
+# Dockerfile.redis - Redis avec configuration personnalisée
+FROM redis:7-alpine
+
+# Installe les outils nécessaires
+RUN apk add --no-cache \
+    tzdata \
+    && rm -rf /var/cache/apk/*
+
+# Crée le répertoire pour la configuration Redis
+RUN mkdir -p /usr/local/etc/redis
+
+# Copie la configuration Redis personnalisée
+COPY docker/redis/redis.conf /usr/local/etc/redis/redis.conf
+
+# Crée le répertoire pour les données Redis
+RUN mkdir -p /data/redis
+
+# Change les permissions
+RUN chown -R redis:redis /data/redis /usr/local/etc/redis
+
+# Définit le répertoire de travail
+WORKDIR /data
+
+# Variables d'environnement
+ENV REDIS_PORT=6379
+ENV REDIS_HOST=0.0.0.0
+
+# Expose le port Redis
+EXPOSE 6379
+
+# Healthcheck pour Redis
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+    CMD redis-cli ping || exit 1
+
+# Démarre Redis avec la configuration personnalisée
+CMD ["redis-server", "/usr/local/etc/redis/redis.conf"]

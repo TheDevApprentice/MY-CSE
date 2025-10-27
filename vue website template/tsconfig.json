@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+  // Configuration de base
+  "target": "ES2020",              // Support des fonctionnalités modernes
+  "module": "ESNext",              // Modules ES modernes
+  "lib": ["ES2020", "DOM", "DOM.Iterable"], // Librairies nécessaires
+  "moduleResolution": "bundler",   // Pour Vite
+  
+  // Alias de chemins
+  "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@public/*": ["public/*"],
+      "@components/*": ["src/components/*"],
+      "@icons/*": ["src/components/common/icons/*"],
+      "@common/*": ["src/components/common/*"],
+      "@dashboards/*": ["src/components/common/layouts/dashboard/*"],
+      "@utils/*": ["src/utils/*"],
+      "@views/*": ["src/views/*"],
+      "@composables/*": ["src/composables/*"],
+      "@assets/*": ["src/assets/*"],
+      "@plugins/*": ["src/plugins/*"],
+      "@keys/*": ["src/keys/*"],
+      "@types/*": ["src/types/*"],
+      "@modules/*": ["src/modules/*"],
+      "@locales/*": ["src/locales/*"],
+      "@services/*": ["src/services/*"]
+    },
+        // Options Vue
+  "jsx": "preserve",
+  "allowJs": true,
+  "checkJs": false,
+  
+  // Strictness
+  "strict": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+  "noFallthroughCasesInSwitch": true,
+  
+  // Interopérabilité des modules
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "forceConsistentCasingInFileNames": true,
+  
+  // Émission
+  "skipLibCheck": true,
+  "noEmit": true,
+  
+  // Résolution
+  "resolveJsonModule": true,
+  "isolatedModules": true
+  },
+  "include": [
+    "public/**.ts",
+    "public/**.js",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.d.ts",
+    "src/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "doc",
+  ]
+}
